@@ -1,0 +1,54 @@
+{"AddToPlaylist": ["artist", "playlist"], "SearchScreeningEvent": ["object_type", "movie_name"]}
+{"AddToPlaylist": ["artist", "playlist", "playlist_owner"], "RateBook": ["rating_value", "object_name", "best_rating", "rating_unit"], "SearchCreativeWork": ["object_type", "object_name"]}
+{"AddToPlaylist": ["entity_name", "playlist"], "PlayMusic": ["music_item", "artist", "service"]}
+{"AddToPlaylist": ["music_item", "playlist"], "SearchCreativeWork": ["object_type", "object_name"]}
+{"AddToPlaylist": ["entity_name", "playlist"]}
+{"AddToPlaylist": ["music_item", "playlist"], "BookRestaurant": ["restaurant_type", "party_size_number"]}
+{"AddToPlaylist": ["entity_name", "playlist"], "PlayMusic": ["music_item", "artist", "year"]}
+{"PlayMusic": ["artist"], "RateBook": ["object_name", "rating_value"]}
+{"PlayMusic": ["music_item", "artist"], "SearchCreativeWork": ["object_name", "object_type"]}
+{"AddToPlaylist": ["entity_name", "playlist"], "PlayMusic": ["music_item", "artist", "service"]}
+{"BookRestaurant": ["party_size_number", "restaurant_type", "spatial_relation", "poi"], "PlayMusic": ["service"]}
+{"GetWeather": ["city"], "PlayMusic": ["service", "playlist"]}
+{"PlayMusic": ["track"], "RateBook": ["object_select", "object_type", "rating_value", "best_rating"]}
+{"AddToPlaylist": ["entity_name", "playlist"], "PlayMusic": ["music_item", "artist", "year"]}
+{"AddToPlaylist": ["music_item", "playlist"], "PlayMusic": ["sort", "artist"], "SearchScreeningEvent": ["object_type", "timeRange"]}
+{"BookRestaurant": ["party_size_description", "city", "restaurant_type"], "SearchScreeningEvent": ["movie_name"]}
+{"BookRestaurant": ["restaurant_type", "party_size_number", "city"], "GetWeather": ["condition_temperature", "timeRange", "country"]}
+{"BookRestaurant": ["restaurant_type", "served_dish"]}
+{"BookRestaurant": ["party_size_number", "restaurant_name", "city"], "SearchCreativeWork": ["object_name"]}
+{"PlayMusic": ["music_item", "artist"], "SearchCreativeWork": ["object_name", "object_type"]}
+{"SearchCreativeWork": ["object_type", "object_name"]}
+{"AddToPlaylist": ["artist", "playlist", "playlist_owner"], "RateBook": ["rating_value", "object_name", "best_rating", "rating_unit"], "SearchCreativeWork": ["object_type", "object_name"]}
+{"BookRestaurant": ["party_size_number", "restaurant_name", "city"], "SearchCreativeWork": ["object_name"]}
+{"AddToPlaylist": ["music_item", "playlist"], "SearchCreativeWork": ["object_type", "object_name"]}
+{"AddToPlaylist": ["music_item", "playlist"], "SearchCreativeWork": ["object_name"]}
+{"SearchCreativeWork": ["object_name"]}
+{"GetWeather": ["spatial_relation", "geographic_poi"], "SearchCreativeWork": ["object_type", "object_name"]}
+{"PlayMusic": ["music_item", "artist", "service"], "SearchCreativeWork": ["object_type", "object_name"]}
+{"SearchCreativeWork": ["object_type", "object_name"]}
+{"AddToPlaylist": ["artist", "playlist"], "PlayMusic": ["service", "artist", "year"], "SearchCreativeWork": ["object_type", "object_name"]}
+{"AddToPlaylist": ["artist", "playlist"], "SearchCreativeWork": ["object_type", "object_name"]}
+{"SearchCreativeWork": ["object_name"]}
+{"PlayMusic": ["artist", "year"], "SearchCreativeWork": ["object_name", "object_type"]}
+{"PlayMusic": ["artist"], "RateBook": ["object_name", "rating_value"]}
+{"RateBook": ["object_name", "rating_value", "rating_unit"], "SearchScreeningEvent": ["object_type", "location_name"]}
+{"AddToPlaylist": ["artist", "playlist", "playlist_owner"], "RateBook": ["rating_value", "object_name", "best_rating", "rating_unit"], "SearchCreativeWork": ["object_type", "object_name"]}
+{"RateBook": ["rating_value", "rating_unit", "object_name"]}
+{"PlayMusic": ["track"], "RateBook": ["object_select", "object_type", "rating_value", "best_rating"]}
+{"RateBook": ["object_select", "object_part_of_series_type", "rating_value"]}
+{"RateBook": ["object_select", "object_type", "rating_value", "best_rating"]}
+{"BookRestaurant": ["restaurant_type", "party_size_number", "city"], "GetWeather": ["condition_temperature", "timeRange", "country"]}
+{"GetWeather": ["city"], "PlayMusic": ["service", "playlist"]}
+{"GetWeather": ["state", "city"]}
+{"BookRestaurant": ["served_dish", "party_size_number", "restaurant_type"], "GetWeather": ["country"]}
+{"AddToPlaylist": ["music_item", "playlist_owner", "playlist"], "GetWeather": ["condition_temperature", "state"], "SearchScreeningEvent": ["movie_type", "spatial_relation"]}
+{"RateBook": ["object_name", "rating_value", "rating_unit"], "SearchScreeningEvent": ["object_type", "location_name"]}
+{"AddToPlaylist": ["artist", "playlist"], "SearchScreeningEvent": ["object_type", "movie_name"]}
+{"BookRestaurant": ["party_size_description", "city", "restaurant_type"], "SearchScreeningEvent": ["movie_name"]}
+{"SearchScreeningEvent": ["movie_type", "spatial_relation"]}
+{"SearchScreeningEvent": ["object_type", "location_name"]}
+{"SearchScreeningEvent": ["movie_name"]}
+{"AddToPlaylist": ["music_item", "playlist_owner", "playlist"], "GetWeather": ["condition_temperature", "state"], "SearchScreeningEvent": ["movie_type", "spatial_relation"]}
+{"AddToPlaylist": ["music_item", "playlist"], "PlayMusic": ["sort", "artist"], "SearchScreeningEvent": ["object_type", "timeRange"]}
+{"AddToPlaylist": ["music_item", "playlist_owner", "playlist"], "SearchScreeningEvent": ["movie_type", "location_name", "timeRange"]}

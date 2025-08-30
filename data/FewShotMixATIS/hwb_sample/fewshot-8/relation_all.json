@@ -1,0 +1,3206 @@
+[
+    {
+        "Utterance": "what airport is at tampa , show me all flights from pittsburgh to philadelphia which arrive before 8 o'clock am on wednesday and then ground transportation between airport and downtown in boston",
+        "Intents": [
+            "atis_airport",
+            "atis_flight",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "city_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "arrive_time.time_relative",
+            "arrive_time.time",
+            "arrive_date.day_name"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "arrive_time.time_relative",
+            "arrive_time.time",
+            "arrive_date.day_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "i want to know what flights you have available coach or economy class from baltimore to dallas and show me ground transportation in san francisco",
+        "Intents": [
+            "atis_flight",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "class_type",
+            "or",
+            "economy",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "city_name"
+        ],
+        "atis_flight": [
+            "class_type",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "what are the flights from orlando to kansas city , what is the minimum connection time for houston intercontinental and then what are the air restrictions on flights from pittsburgh to atlanta for the airfare of 416 dollars",
+        "Intents": [
+            "atis_flight",
+            "atis_flight_time",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "airport_name",
+            "fare_amount"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_time": [
+            "airport_name"
+        ],
+        "atis_restriction": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "fare_amount"
+        ]
+    },
+    {
+        "Utterance": "what does fare code qo mean , please list the flights from toronto to washington dc and also i would like the flight number and the time for the cheapest fare that is the least expensive first class fare from san francisco to pittsburgh leaving after 8 pm monday night",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_flight",
+            "atis_flight_no"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "toloc.state_code",
+            "flight_time",
+            "cost_relative",
+            "class_type",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_no": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "class_type",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ]
+    },
+    {
+        "Utterance": "what is the distance from san francisco international airport to san francisco and is there a flight between oakland and boston with a stopover in dallas fort worth on twa",
+        "Intents": [
+            "atis_distance",
+            "atis_flight"
+        ],
+        "Entities": [
+            "fromloc.airport_name",
+            "toloc.city_name",
+            "fromloc.city_name",
+            "stoploc.city_name",
+            "airline_code"
+        ],
+        "atis_distance": [
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "stoploc.city_name",
+            "airline_code"
+        ]
+    },
+    {
+        "Utterance": "i'd like a flight from montreal to san diego for sunday and then what are the rental car rates in san francisco",
+        "Intents": [
+            "atis_flight",
+            "atis_ground_fare"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.day_name",
+            "transport_type",
+            "city_name"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.day_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "what airport is at tampa , on continental flight 1765 from boston to san francisco what type of meal is served and may i have a listing of flight numbers from columbus ohio to minneapolis minnesota on monday",
+        "Intents": [
+            "atis_airport",
+            "atis_flight",
+            "atis_flight_no"
+        ],
+        "Entities": [
+            "city_name",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "meal",
+            "fromloc.state_name",
+            "toloc.state_name",
+            "depart_date.day_name"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_flight": [
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "meal"
+        ],
+        "atis_flight_no": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.day_name"
+        ]
+    },
+    {
+        "Utterance": "show me the cheapest fare in the database and what's the last flight leaving from pittsburgh to oakland",
+        "Intents": [
+            "atis_cheapest",
+            "atis_flight"
+        ],
+        "Entities": [
+            "cost_relative",
+            "flight_mod",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_flight": [
+            "flight_mod",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "saturday flights from las vegas to montreal and what are the schedule of flights from boston to san francisco for august first",
+        "Intents": [
+            "atis_flight",
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "depart_date.day_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "flight_time",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ],
+        "atis_flight": [
+            "depart_date.day_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_time": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "flight_time",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ]
+    },
+    {
+        "Utterance": "which airline has the most arrivals in atlanta , show me the cheapest fare in the database and also show me a list of flights from denver to san francisco for september first 1991",
+        "Intents": [
+            "atis_airline",
+            "atis_cheapest",
+            "atis_flight"
+        ],
+        "Entities": [
+            "mod",
+            "toloc.city_name",
+            "cost_relative",
+            "fromloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number",
+            "depart_date.year"
+        ],
+        "atis_airline": [
+            "mod",
+            "toloc.city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number",
+            "depart_date.year"
+        ]
+    },
+    {
+        "Utterance": "airline code as , please list the flights leaving from st. louis to st. paul after 10 am and then how much is the ground transportation between atlanta and downtown",
+        "Intents": [
+            "atis_airline",
+            "atis_flight",
+            "atis_ground_fare"
+        ],
+        "Entities": [
+            "airline_code",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time"
+        ],
+        "atis_airline": [
+            "airline_code"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time"
+        ],
+        "atis_ground_fare": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "list number of people that can be carried on each type of plane that flies between pittsburgh and baltimore and flight leaving chicago to nashville",
+        "Intents": [
+            "atis_capacity",
+            "atis_flight"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_capacity": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what's the difference between fare code q and fare code b , what are the cities that american airlines serves and then what flights are available from denver to dallas fort worth in the afternoons",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_city",
+            "atis_flight"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_city": [
+            "airline_name"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.period_of_day"
+        ]
+    },
+    {
+        "Utterance": "i'm traveling from boston to atlanta and i'd like to go sometime after 5 pm but i want to know what kind of airplane it's on , airline code as and show me the flights from cincinnati to denver",
+        "Intents": [
+            "atis_aircraft",
+            "atis_airline",
+            "atis_flight"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "airline_code"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_airline": [
+            "airline_code"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "show me the flights from pittsburgh to baltimore arriving in baltimore on june fourteenth and then show me all meals on flights from atlanta to washington",
+        "Intents": [
+            "atis_flight",
+            "atis_meal"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "arrive_date.month_name",
+            "arrive_date.day_number",
+            "meal"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "arrive_date.month_name",
+            "arrive_date.day_number"
+        ],
+        "atis_meal": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "meal"
+        ]
+    },
+    {
+        "Utterance": "what are the cities that american airlines serves , can you list costs of denver rental cars and then is there a meal on delta flight 852 from san francisco to dallas fort worth",
+        "Intents": [
+            "atis_city",
+            "atis_ground_fare",
+            "atis_meal"
+        ],
+        "Entities": [
+            "airline_name",
+            "city_name",
+            "transport_type",
+            "meal",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_city": [
+            "airline_name"
+        ],
+        "atis_ground_fare": [
+            "city_name",
+            "transport_type"
+        ],
+        "atis_meal": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what are the rental car rates in dallas",
+        "Intents": [
+            "atis_ground_fare"
+        ],
+        "Entities": [
+            "transport_type",
+            "city_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "please show me all airports in denver , what price is a limousine service to new york's la guardia and then how many flights does twa have in business class",
+        "Intents": [
+            "atis_airport",
+            "atis_ground_fare",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "city_name",
+            "transport_type",
+            "fromloc.city_name",
+            "fromloc.airport_name",
+            "airline_code",
+            "class_type"
+        ],
+        "atis_airport": [
+            "city_name",
+            "fromloc.city_name",
+            "fromloc.airport_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ],
+        "atis_quantity": [
+            "airline_code",
+            "class_type"
+        ]
+    },
+    {
+        "Utterance": "what price is a limousine service in boston and then what is restriction ap57",
+        "Intents": [
+            "atis_ground_fare",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "transport_type",
+            "city_name",
+            "restriction_code"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "airports in new york and then what are the rental car rates in san francisco",
+        "Intents": [
+            "atis_airport",
+            "atis_ground_fare"
+        ],
+        "Entities": [
+            "city_name",
+            "transport_type"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "i'd like a flight from montreal to san diego for sunday and then what are the rental car rates in san francisco",
+        "Intents": [
+            "atis_flight",
+            "atis_ground_fare"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.day_name",
+            "transport_type",
+            "city_name"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.day_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "please list the prices for a rental car in pittsburgh and also what are all the available meals",
+        "Intents": [
+            "atis_ground_fare",
+            "atis_meal"
+        ],
+        "Entities": [
+            "transport_type",
+            "city_name",
+            "meal"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ],
+        "atis_meal": [
+            "meal"
+        ]
+    },
+    {
+        "Utterance": "what kind of aircraft will i be flying on if i take a first class american airlines flight from philadelphia to dallas , i would like the flight number and the time for the cheapest fare that is the least expensive first class fare from san francisco to pittsburgh leaving after 8 pm monday night and also i would like the time of all flights from san francisco to pittsburgh on sunday",
+        "Intents": [
+            "atis_aircraft",
+            "atis_flight_no",
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "class_type",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "flight_time",
+            "cost_relative",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_aircraft": [
+            "class_type",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_no": [
+            "class_type",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "cost_relative",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_flight_time": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.day_name"
+        ]
+    },
+    {
+        "Utterance": "what are the schedule of flights from boston to san francisco for august first",
+        "Intents": [
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "flight_time",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ]
+    },
+    {
+        "Utterance": "what are the flights from orlando to kansas city , what is the minimum connection time for houston intercontinental and then what are the air restrictions on flights from pittsburgh to atlanta for the airfare of 416 dollars",
+        "Intents": [
+            "atis_flight",
+            "atis_flight_time",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "airport_name",
+            "fare_amount"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_time": [
+            "airport_name"
+        ],
+        "atis_restriction": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "fare_amount"
+        ]
+    },
+    {
+        "Utterance": "houston airports , what are the schedule of flights from boston to san francisco for august first and then what is restriction ap57",
+        "Intents": [
+            "atis_airport",
+            "atis_flight_time",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "city_name",
+            "flight_time",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number",
+            "restriction_code"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "what times does the late afternoon flight leave from washington for denver and what ground transportation is available in san francisco",
+        "Intents": [
+            "atis_flight_time",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "flight_time",
+            "depart_time.period_of_day",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "city_name"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "depart_time.period_of_day",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "saturday flights from las vegas to montreal and what are the schedule of flights from boston to san francisco for august first",
+        "Intents": [
+            "atis_flight",
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "depart_date.day_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "flight_time",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ],
+        "atis_flight": [
+            "depart_date.day_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_time": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "flight_time",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ]
+    },
+    {
+        "Utterance": "lowest fare from san francisco to orlando , what is the seating capacity of the various airplanes that united airlines uses and also could you give me the schedule of flights for american and delta to dfw on august fifteenth",
+        "Intents": [
+            "atis_airfare",
+            "atis_capacity",
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "cost_relative",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "airline_name",
+            "flight_time",
+            "toloc.airport_code",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ],
+        "atis_airfare": [
+            "cost_relative",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_capacity": [
+            "airline_name"
+        ],
+        "atis_flight_time": [
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "flight_time",
+            "toloc.airport_code",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ]
+    },
+    {
+        "Utterance": "what is the arrival time in san francisco for the 755 am flight leaving washington",
+        "Intents": [
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "flight_time",
+            "fromloc.city_name",
+            "depart_time.time"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "fromloc.city_name",
+            "depart_time.time"
+        ]
+    },
+    {
+        "Utterance": "are there any other cities that i can fly from boston to dallas through that i can get a flight earlier than 1017 in the morning , what time does flight aa 459 depart and then do i get a meal on the atlanta to bwi flight eastern 210",
+        "Intents": [
+            "atis_city",
+            "atis_flight_time",
+            "atis_meal"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_time.period_of_day",
+            "flight_time",
+            "airline_code",
+            "flight_number",
+            "meal",
+            "toloc.airport_code",
+            "airline_name"
+        ],
+        "atis_city": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_time": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_time.period_of_day",
+            "flight_time"
+        ],
+        "atis_meal": [
+            "meal",
+            "airline_code",
+            "flight_number",
+            "toloc.airport_code",
+            "airline_name"
+        ]
+    },
+    {
+        "Utterance": "what is delta's schedule of morning flights to atlanta",
+        "Intents": [
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "airline_name",
+            "flight_time",
+            "depart_time.period_of_day",
+            "toloc.city_name"
+        ],
+        "atis_flight_time": [
+            "airline_name",
+            "flight_time",
+            "depart_time.period_of_day",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "please show me airlines with flights from denver to philadelphia and also what is the arrival time in san francisco for the 755 am flight leaving washington",
+        "Intents": [
+            "atis_airline",
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "flight_time",
+            "depart_time.time"
+        ],
+        "atis_airline": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "depart_time.time"
+        ]
+    },
+    {
+        "Utterance": "what types of aircraft does delta fly and also what times on wednesday could i take a plane from denver to oakland",
+        "Intents": [
+            "atis_aircraft",
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "airline_name",
+            "flight_time",
+            "depart_date.day_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_aircraft": [
+            "airline_name"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "depart_date.day_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "is there a meal on delta flight 852 from san francisco to dallas fort worth and list the number of flights leaving boston for dallas fort worth before 9 am in the morning",
+        "Intents": [
+            "atis_meal",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_time.period_of_day"
+        ],
+        "atis_meal": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_quantity": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_time.period_of_day"
+        ]
+    },
+    {
+        "Utterance": "please show me all airports in denver , what price is a limousine service to new york's la guardia and then how many flights does twa have in business class",
+        "Intents": [
+            "atis_airport",
+            "atis_ground_fare",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "city_name",
+            "transport_type",
+            "fromloc.city_name",
+            "fromloc.airport_name",
+            "airline_code",
+            "class_type"
+        ],
+        "atis_airport": [
+            "city_name",
+            "fromloc.city_name",
+            "fromloc.airport_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ],
+        "atis_quantity": [
+            "airline_code",
+            "class_type"
+        ]
+    },
+    {
+        "Utterance": "what is fare code f and also how many fare codes belong to economy class",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "economy"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_quantity": [
+            "economy"
+        ]
+    },
+    {
+        "Utterance": "could you please give me the round trip fare from denver to atlanta , what is the cost of limousine service in philadelphia and also how many united flights are there to san francisco",
+        "Intents": [
+            "atis_airfare",
+            "atis_ground_fare",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "round_trip",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "transport_type",
+            "city_name",
+            "airline_name"
+        ],
+        "atis_airfare": [
+            "round_trip",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ],
+        "atis_quantity": [
+            "airline_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what's the airport at orlando and then list the number of flights leaving boston for dallas fort worth before 9 am in the morning",
+        "Intents": [
+            "atis_airport",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "city_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_time.period_of_day"
+        ],
+        "atis_airport": [
+            "city_name",
+            "fromloc.city_name"
+        ],
+        "atis_quantity": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_time.period_of_day"
+        ]
+    },
+    {
+        "Utterance": "how many airlines fly from new york to los angeles by way of milwaukee",
+        "Intents": [
+            "atis_quantity"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "stoploc.city_name"
+        ],
+        "atis_quantity": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "stoploc.city_name"
+        ]
+    },
+    {
+        "Utterance": "show me all meals on flights from atlanta to washington and also how many flights come from denver to baltimore on july nineteenth",
+        "Intents": [
+            "atis_meal",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "meal",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ],
+        "atis_meal": [
+            "meal",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_quantity": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ]
+    },
+    {
+        "Utterance": "show me airline abbreviations , show me the cities served by nationair and then how many flights does twa have with business class",
+        "Intents": [
+            "atis_airline",
+            "atis_city",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "airline_name",
+            "airline_code",
+            "class_type"
+        ],
+        "atis_airline": [
+            "airline_code"
+        ],
+        "atis_city": [
+            "airline_name"
+        ],
+        "atis_quantity": [
+            "airline_name",
+            "class_type"
+        ]
+    },
+    {
+        "Utterance": "show me the cheapest fare in the database , which cities does united airlines service and then how many flights does delta have with a class of service code f",
+        "Intents": [
+            "atis_cheapest",
+            "atis_city",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "cost_relative",
+            "airline_name",
+            "fare_basis_code"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_city": [
+            "airline_name"
+        ],
+        "atis_quantity": [
+            "airline_name",
+            "fare_basis_code"
+        ]
+    },
+    {
+        "Utterance": "show me all fares between philadelphia and san francisco that are less than 200 dollars one way , please tell me the times of the flights between boston and baltimore and also how many flights does eastern airlines have from boston to atlanta",
+        "Intents": [
+            "atis_airfare",
+            "atis_flight_time",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "cost_relative",
+            "fare_amount",
+            "round_trip",
+            "flight_time",
+            "airline_name"
+        ],
+        "atis_airfare": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "cost_relative",
+            "fare_amount",
+            "round_trip"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_quantity": [
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "show me the cheapest fare in the database and then how many fare codes belong to economy class",
+        "Intents": [
+            "atis_cheapest",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "cost_relative",
+            "economy"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_quantity": [
+            "economy"
+        ]
+    },
+    {
+        "Utterance": "what is the name of the airport in philadelphia and then what is the distance between pittsburgh airport and downtown pittsburgh",
+        "Intents": [
+            "atis_airport",
+            "atis_distance"
+        ],
+        "Entities": [
+            "city_name",
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ],
+        "atis_airport": [
+            "city_name",
+            "fromloc.airport_name"
+        ],
+        "atis_distance": [
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what is the distance from san francisco international airport to san francisco and is there a flight between oakland and boston with a stopover in dallas fort worth on twa",
+        "Intents": [
+            "atis_distance",
+            "atis_flight"
+        ],
+        "Entities": [
+            "fromloc.airport_name",
+            "toloc.city_name",
+            "fromloc.city_name",
+            "stoploc.city_name",
+            "airline_code"
+        ],
+        "atis_distance": [
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "stoploc.city_name",
+            "airline_code"
+        ]
+    },
+    {
+        "Utterance": "what is the fare code y and what is the fare code h , give me a list of airports in baltimore and also how far is the airport from downtown pittsburgh",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_airport",
+            "atis_distance"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "city_name",
+            "fromloc.city_name"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_distance": [
+            "fromloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what does fare code y mean , does the philadelphia airport have a name and what is the distance between pittsburgh airport and downtown pittsburgh",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_airport",
+            "atis_distance"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "airport_name",
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_airport": [
+            "airport_name"
+        ],
+        "atis_distance": [
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what does the fare code qx mean , what is the distance between pittsburgh airport and downtown pittsburgh and what is restriction ap80",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_distance",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "fromloc.airport_name",
+            "toloc.city_name",
+            "restriction_code"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_distance": [
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "define airline ua , names of airports and also show me city served both by nationair and canadian airlines international",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_airport",
+            "atis_city"
+        ],
+        "Entities": [
+            "airline_code",
+            "airline_name"
+        ],
+        "atis_abbreviation": [
+            "airline_code"
+        ],
+        "atis_airport": [
+            "airline_name"
+        ],
+        "atis_city": [
+            "airline_name"
+        ]
+    },
+    {
+        "Utterance": "how many seats in a 100 and also which cities are serviced by both american and delta airlines",
+        "Intents": [
+            "atis_capacity",
+            "atis_city"
+        ],
+        "Entities": [
+            "aircraft_code",
+            "airline_name"
+        ],
+        "atis_capacity": [
+            "aircraft_code"
+        ],
+        "atis_city": [
+            "airline_name"
+        ]
+    },
+    {
+        "Utterance": "show me the type of aircraft that cp uses and what time zone is denver in",
+        "Intents": [
+            "atis_aircraft",
+            "atis_city"
+        ],
+        "Entities": [
+            "airline_code",
+            "city_name"
+        ],
+        "atis_aircraft": [
+            "airline_code"
+        ],
+        "atis_city": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "show me city served both by nationair and canadian airlines international and what types of ground transportation are there to san francisco airport",
+        "Intents": [
+            "atis_city",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "airline_name",
+            "toloc.airport_name"
+        ],
+        "atis_city": [
+            "airline_name"
+        ],
+        "atis_ground_service": [
+            "toloc.airport_name"
+        ]
+    },
+    {
+        "Utterance": "what are the cities that american airlines serves , can you list costs of denver rental cars and then is there a meal on delta flight 852 from san francisco to dallas fort worth",
+        "Intents": [
+            "atis_city",
+            "atis_ground_fare",
+            "atis_meal"
+        ],
+        "Entities": [
+            "airline_name",
+            "city_name",
+            "transport_type",
+            "meal",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_city": [
+            "airline_name"
+        ],
+        "atis_ground_fare": [
+            "city_name",
+            "transport_type"
+        ],
+        "atis_meal": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what cities does continental service",
+        "Intents": [
+            "atis_city"
+        ],
+        "Entities": [
+            "airline_name"
+        ],
+        "atis_city": [
+            "airline_name"
+        ]
+    },
+    {
+        "Utterance": "where is general mitchell international located and then what are all the available meals",
+        "Intents": [
+            "atis_city",
+            "atis_meal"
+        ],
+        "Entities": [
+            "airport_name",
+            "meal"
+        ],
+        "atis_city": [
+            "airport_name"
+        ],
+        "atis_meal": [
+            "meal"
+        ]
+    },
+    {
+        "Utterance": "i'd like to know what type of plane flies from boston to dallas fort worth after 530 and then show me all the cities that midwest express serves",
+        "Intents": [
+            "atis_aircraft",
+            "atis_city"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "airline_name"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time"
+        ],
+        "atis_city": [
+            "airline_name"
+        ]
+    },
+    {
+        "Utterance": "show me the cheapest fare in the database and is bwi washington",
+        "Intents": [
+            "atis_cheapest",
+            "atis_city"
+        ],
+        "Entities": [
+            "cost_relative",
+            "airport_code",
+            "city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_city": [
+            "airport_code",
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "how many seats in a 100 and also which cities are serviced by both american and delta airlines",
+        "Intents": [
+            "atis_capacity",
+            "atis_city"
+        ],
+        "Entities": [
+            "aircraft_code",
+            "airline_name"
+        ],
+        "atis_capacity": [
+            "aircraft_code"
+        ],
+        "atis_city": [
+            "airline_name"
+        ]
+    },
+    {
+        "Utterance": "how many people fit on a 73s and then what is restriction ap80",
+        "Intents": [
+            "atis_capacity",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "aircraft_code",
+            "restriction_code"
+        ],
+        "atis_capacity": [
+            "aircraft_code"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "what type of aircraft leaves from boston to washington dc at 9 am and then what's the capacity of a 733",
+        "Intents": [
+            "atis_aircraft",
+            "atis_capacity"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "toloc.state_code",
+            "depart_time.time",
+            "aircraft_code"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time"
+        ],
+        "atis_capacity": [
+            "aircraft_code"
+        ]
+    },
+    {
+        "Utterance": "what are the seating capacities of planes between pittsburgh and baltimore",
+        "Intents": [
+            "atis_capacity"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_capacity": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "how many passengers fit on a d9s and also what are the rental car rates in san francisco",
+        "Intents": [
+            "atis_capacity",
+            "atis_ground_fare"
+        ],
+        "Entities": [
+            "aircraft_code",
+            "transport_type",
+            "city_name"
+        ],
+        "atis_capacity": [
+            "aircraft_code"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "show me the type of aircraft that cp uses and what time zone is denver in",
+        "Intents": [
+            "atis_aircraft",
+            "atis_city"
+        ],
+        "Entities": [
+            "airline_code",
+            "city_name"
+        ],
+        "atis_aircraft": [
+            "airline_code"
+        ],
+        "atis_city": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "what kind of aircraft will i be flying on if i take a first class american airlines flight from philadelphia to dallas , i would like the flight number and the time for the cheapest fare that is the least expensive first class fare from san francisco to pittsburgh leaving after 8 pm monday night and also i would like the time of all flights from san francisco to pittsburgh on sunday",
+        "Intents": [
+            "atis_aircraft",
+            "atis_flight_no",
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "class_type",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "flight_time",
+            "cost_relative",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_aircraft": [
+            "class_type",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_no": [
+            "class_type",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "cost_relative",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_flight_time": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.day_name"
+        ]
+    },
+    {
+        "Utterance": "please inform me the type of aircraft used on a flight from atlanta to denver before 12 o'clock noon and also fares and flights from baltimore to philadelphia",
+        "Intents": [
+            "atis_aircraft",
+            "atis_airfare"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time"
+        ],
+        "atis_airfare": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what type of aircraft leaves from boston to washington dc at 9 am and then what's the capacity of a 733",
+        "Intents": [
+            "atis_aircraft",
+            "atis_capacity"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "toloc.state_code",
+            "depart_time.time",
+            "aircraft_code"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time"
+        ],
+        "atis_capacity": [
+            "aircraft_code"
+        ]
+    },
+    {
+        "Utterance": "i'd like to know what type of plane flies from boston to dallas fort worth after 530 and then show me all the cities that midwest express serves",
+        "Intents": [
+            "atis_aircraft",
+            "atis_city"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "airline_name"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time"
+        ],
+        "atis_city": [
+            "airline_name"
+        ]
+    },
+    {
+        "Utterance": "what type of aircraft leaving philadelphia to dallas , how long does it take to get from kansas city to st. paul and what is the cost of the air taxi operation at philadelphia international airport",
+        "Intents": [
+            "atis_aircraft",
+            "atis_distance",
+            "atis_ground_fare"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "transport_type",
+            "airport_name"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_distance": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "airport_name"
+        ]
+    },
+    {
+        "Utterance": "okay i would like to know the type of aircraft used on a flight from cleveland to dallas please and which airline provides business class flights",
+        "Intents": [
+            "atis_aircraft",
+            "atis_airline"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "class_type"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_airline": [
+            "class_type"
+        ]
+    },
+    {
+        "Utterance": "does delta aircraft fly dc10",
+        "Intents": [
+            "atis_aircraft"
+        ],
+        "Entities": [
+            "airline_name",
+            "aircraft_code"
+        ],
+        "atis_aircraft": [
+            "airline_name",
+            "aircraft_code"
+        ]
+    },
+    {
+        "Utterance": "i'm traveling from boston to atlanta and i'd like to go sometime after 5 pm but i want to know what kind of airplane it's on , airline code as and show me the flights from cincinnati to denver",
+        "Intents": [
+            "atis_aircraft",
+            "atis_airline",
+            "atis_flight"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "airline_code"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_airline": [
+            "airline_code"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what types of aircraft does delta fly and also what times on wednesday could i take a plane from denver to oakland",
+        "Intents": [
+            "atis_aircraft",
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "airline_name",
+            "flight_time",
+            "depart_date.day_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_aircraft": [
+            "airline_name"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "depart_date.day_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what type of aircraft flies from pittsburgh to baltimore and what is restriction ap57",
+        "Intents": [
+            "atis_aircraft",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "restriction_code"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "what aircraft is co 1209",
+        "Intents": [
+            "atis_aircraft"
+        ],
+        "Entities": [
+            "airline_code",
+            "flight_number"
+        ],
+        "atis_aircraft": [
+            "airline_code",
+            "flight_number"
+        ]
+    },
+    {
+        "Utterance": "what kind of aircraft will i be flying on if i take a first class american airlines flight from philadelphia to dallas , i would like the flight number and the time for the cheapest fare that is the least expensive first class fare from san francisco to pittsburgh leaving after 8 pm monday night and also i would like the time of all flights from san francisco to pittsburgh on sunday",
+        "Intents": [
+            "atis_aircraft",
+            "atis_flight_no",
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "class_type",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "flight_time",
+            "cost_relative",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_aircraft": [
+            "class_type",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_no": [
+            "class_type",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "cost_relative",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_flight_time": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.day_name"
+        ]
+    },
+    {
+        "Utterance": "show me the cheapest fare in the database and please show me the return flight number from toronto to st. petersburg",
+        "Intents": [
+            "atis_cheapest",
+            "atis_flight_no"
+        ],
+        "Entities": [
+            "cost_relative",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_flight_no": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what's the airport at orlando , please show me the return flight number from toronto to st. petersburg and also i need ground transportation in seattle",
+        "Intents": [
+            "atis_airport",
+            "atis_flight_no",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "city_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_flight_no": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "what does fare code qo mean , please list the flights from toronto to washington dc and also i would like the flight number and the time for the cheapest fare that is the least expensive first class fare from san francisco to pittsburgh leaving after 8 pm monday night",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_flight",
+            "atis_flight_no"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "toloc.state_code",
+            "flight_time",
+            "cost_relative",
+            "class_type",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_no": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "class_type",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ]
+    },
+    {
+        "Utterance": "show me the cheapest fare in the database and please show me the return flight number from toronto to st. petersburg",
+        "Intents": [
+            "atis_cheapest",
+            "atis_flight_no"
+        ],
+        "Entities": [
+            "cost_relative",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_flight_no": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "show me the cheapest fare in the database and ground transportation san francisco",
+        "Intents": [
+            "atis_cheapest",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "cost_relative",
+            "city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "does the philadelphia airport have a name , show me the cheapest fare in the database and then what is the number of first class flights on american airlines",
+        "Intents": [
+            "atis_airport",
+            "atis_cheapest",
+            "atis_flight_no"
+        ],
+        "Entities": [
+            "airport_name",
+            "cost_relative",
+            "class_type",
+            "airline_name"
+        ],
+        "atis_airport": [
+            "airport_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_flight_no": [
+            "class_type",
+            "airline_name"
+        ]
+    },
+    {
+        "Utterance": "show me the cheapest fare in the database and what's the last flight leaving from pittsburgh to oakland",
+        "Intents": [
+            "atis_cheapest",
+            "atis_flight"
+        ],
+        "Entities": [
+            "cost_relative",
+            "flight_mod",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_flight": [
+            "flight_mod",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what airlines fly from boston to atlanta",
+        "Intents": [
+            "atis_airline"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_airline": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "does any airline have an early afternoon flight from boston to denver and then what are the air restrictions on flights from pittsburgh to atlanta for the airfare of 416 dollars",
+        "Intents": [
+            "atis_airline",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "depart_time.period_of_day",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "fare_amount"
+        ],
+        "atis_airline": [
+            "depart_time.period_of_day",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_restriction": [
+            "fare_amount"
+        ]
+    },
+    {
+        "Utterance": "which airline has the most arrivals in atlanta , show me the cheapest fare in the database and also show me a list of flights from denver to san francisco for september first 1991",
+        "Intents": [
+            "atis_airline",
+            "atis_cheapest",
+            "atis_flight"
+        ],
+        "Entities": [
+            "mod",
+            "toloc.city_name",
+            "cost_relative",
+            "fromloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number",
+            "depart_date.year"
+        ],
+        "atis_airline": [
+            "mod",
+            "toloc.city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number",
+            "depart_date.year"
+        ]
+    },
+    {
+        "Utterance": "which airlines fly from toronto to san diego and have a stopover in denver , show me the cheapest fare in the database and also is there a meal on delta flight 852 from san francisco to dallas fort worth",
+        "Intents": [
+            "atis_airline",
+            "atis_cheapest",
+            "atis_meal"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "stoploc.city_name",
+            "cost_relative",
+            "meal",
+            "airline_name",
+            "flight_number"
+        ],
+        "atis_airline": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "stoploc.city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_meal": [
+            "airline_name",
+            "flight_number"
+        ]
+    },
+    {
+        "Utterance": "airline code as , please list the flights leaving from st. louis to st. paul after 10 am and then how much is the ground transportation between atlanta and downtown",
+        "Intents": [
+            "atis_airline",
+            "atis_flight",
+            "atis_ground_fare"
+        ],
+        "Entities": [
+            "airline_code",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time"
+        ],
+        "atis_airline": [
+            "airline_code"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time"
+        ],
+        "atis_ground_fare": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "define airline ua , names of airports and also show me city served both by nationair and canadian airlines international",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_airport",
+            "atis_city"
+        ],
+        "Entities": [
+            "airline_code",
+            "airline_name"
+        ],
+        "atis_abbreviation": [
+            "airline_code"
+        ],
+        "atis_airport": [
+            "airline_name"
+        ],
+        "atis_city": [
+            "airline_name"
+        ]
+    },
+    {
+        "Utterance": "what does fare code qo mean , please list the flights from toronto to washington dc and also i would like the flight number and the time for the cheapest fare that is the least expensive first class fare from san francisco to pittsburgh leaving after 8 pm monday night",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_flight",
+            "atis_flight_no"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "toloc.state_code",
+            "flight_time",
+            "cost_relative",
+            "class_type",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_no": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "class_type",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_date.day_name",
+            "depart_time.period_of_day"
+        ]
+    },
+    {
+        "Utterance": "what is fare code f and also how many fare codes belong to economy class",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "economy"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_quantity": [
+            "economy"
+        ]
+    },
+    {
+        "Utterance": "what is the fare code y and what is the fare code h , give me a list of airports in baltimore and also how far is the airport from downtown pittsburgh",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_airport",
+            "atis_distance"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "city_name",
+            "fromloc.city_name"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_distance": [
+            "fromloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what does fare code y mean , does the philadelphia airport have a name and what is the distance between pittsburgh airport and downtown pittsburgh",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_airport",
+            "atis_distance"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "airport_name",
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_airport": [
+            "airport_name"
+        ],
+        "atis_distance": [
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what does the fare code qx mean , what is the distance between pittsburgh airport and downtown pittsburgh and what is restriction ap80",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_distance",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "fromloc.airport_name",
+            "toloc.city_name",
+            "restriction_code"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_distance": [
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "what's the difference between fare code q and fare code b , what are the cities that american airlines serves and then what flights are available from denver to dallas fort worth in the afternoons",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_city",
+            "atis_flight"
+        ],
+        "Entities": [
+            "fare_basis_code",
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.period_of_day"
+        ],
+        "atis_abbreviation": [
+            "fare_basis_code"
+        ],
+        "atis_city": [
+            "airline_name"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.period_of_day"
+        ]
+    },
+    {
+        "Utterance": "what is bna",
+        "Intents": [
+            "atis_abbreviation"
+        ],
+        "Entities": [
+            "airport_code"
+        ],
+        "atis_abbreviation": [
+            "airport_code"
+        ]
+    },
+    {
+        "Utterance": "what does ewr mean",
+        "Intents": [
+            "atis_abbreviation"
+        ],
+        "Entities": [
+            "airport_code"
+        ],
+        "atis_abbreviation": [
+            "airport_code"
+        ]
+    },
+    {
+        "Utterance": "what does ua stand for",
+        "Intents": [
+            "atis_abbreviation"
+        ],
+        "Entities": [
+            "airline_code"
+        ],
+        "atis_abbreviation": [
+            "airline_code"
+        ]
+    },
+    {
+        "Utterance": "what is mco",
+        "Intents": [
+            "atis_abbreviation"
+        ],
+        "Entities": [
+            "airport_code"
+        ],
+        "atis_abbreviation": [
+            "airport_code"
+        ]
+    },
+    {
+        "Utterance": "what does ea mean , cheapest airfare from orlando to tacoma and also how expensive is the san francisco limousine service",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_airfare",
+            "atis_ground_fare"
+        ],
+        "Entities": [
+            "airline_code",
+            "cost_relative",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "city_name",
+            "transport_type"
+        ],
+        "atis_abbreviation": [
+            "airline_code"
+        ],
+        "atis_airfare": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_ground_fare": [
+            "cost_relative",
+            "city_name",
+            "transport_type"
+        ]
+    },
+    {
+        "Utterance": "what are the flights from orlando to kansas city , what is the minimum connection time for houston intercontinental and then what are the air restrictions on flights from pittsburgh to atlanta for the airfare of 416 dollars",
+        "Intents": [
+            "atis_flight",
+            "atis_flight_time",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "airport_name",
+            "fare_amount"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_time": [
+            "airport_name"
+        ],
+        "atis_restriction": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "fare_amount"
+        ]
+    },
+    {
+        "Utterance": "is there a meal on delta flight 852 from san francisco to dallas fort worth and what are the restrictions on the cheapest one way fare between boston and oakland",
+        "Intents": [
+            "atis_meal",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "cost_relative",
+            "round_trip"
+        ],
+        "atis_meal": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_restriction": [
+            "cost_relative",
+            "round_trip"
+        ]
+    },
+    {
+        "Utterance": "houston airports , what are the schedule of flights from boston to san francisco for august first and then what is restriction ap57",
+        "Intents": [
+            "atis_airport",
+            "atis_flight_time",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "city_name",
+            "flight_time",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number",
+            "restriction_code"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "first class price san francisco pittsburgh round trip and then what is restriction ap57",
+        "Intents": [
+            "atis_airfare",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "class_type",
+            "fromloc.city_name",
+            "round_trip",
+            "restriction_code"
+        ],
+        "atis_airfare": [
+            "class_type",
+            "fromloc.city_name",
+            "round_trip"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "define airline ua , names of airports and also show me city served both by nationair and canadian airlines international",
+        "Intents": [
+            "atis_abbreviation",
+            "atis_airport",
+            "atis_city"
+        ],
+        "Entities": [
+            "airline_code",
+            "airline_name"
+        ],
+        "atis_abbreviation": [
+            "airline_code"
+        ],
+        "atis_airport": [
+            "airline_name"
+        ],
+        "atis_city": [
+            "airline_name"
+        ]
+    },
+    {
+        "Utterance": "what airport is at tampa , show me all flights from pittsburgh to philadelphia which arrive before 8 o'clock am on wednesday and then ground transportation between airport and downtown in boston",
+        "Intents": [
+            "atis_airport",
+            "atis_flight",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "city_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "arrive_time.time_relative",
+            "arrive_time.time",
+            "arrive_date.day_name"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "arrive_time.time_relative",
+            "arrive_time.time",
+            "arrive_date.day_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "what's the airport at orlando , please show me the return flight number from toronto to st. petersburg and also i need ground transportation in seattle",
+        "Intents": [
+            "atis_airport",
+            "atis_flight_no",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "city_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_flight_no": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "what is the name of the airport in philadelphia and then what is the distance between pittsburgh airport and downtown pittsburgh",
+        "Intents": [
+            "atis_airport",
+            "atis_distance"
+        ],
+        "Entities": [
+            "city_name",
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ],
+        "atis_airport": [
+            "city_name",
+            "fromloc.airport_name"
+        ],
+        "atis_distance": [
+            "fromloc.airport_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what's the name of the denver airport",
+        "Intents": [
+            "atis_airport"
+        ],
+        "Entities": [
+            "airport_name"
+        ],
+        "atis_airport": [
+            "airport_name"
+        ]
+    },
+    {
+        "Utterance": "houston airports , what are the schedule of flights from boston to san francisco for august first and then what is restriction ap57",
+        "Intents": [
+            "atis_airport",
+            "atis_flight_time",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "city_name",
+            "flight_time",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number",
+            "restriction_code"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "please show me all airports in denver , what price is a limousine service to new york's la guardia and then how many flights does twa have in business class",
+        "Intents": [
+            "atis_airport",
+            "atis_ground_fare",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "city_name",
+            "transport_type",
+            "fromloc.city_name",
+            "fromloc.airport_name",
+            "airline_code",
+            "class_type"
+        ],
+        "atis_airport": [
+            "city_name",
+            "fromloc.city_name",
+            "fromloc.airport_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ],
+        "atis_quantity": [
+            "airline_code",
+            "class_type"
+        ]
+    },
+    {
+        "Utterance": "airports in new york and then what are the rental car rates in san francisco",
+        "Intents": [
+            "atis_airport",
+            "atis_ground_fare"
+        ],
+        "Entities": [
+            "city_name",
+            "transport_type"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "is there a meal on delta flight 852 from san francisco to dallas fort worth and list the number of flights leaving boston for dallas fort worth before 9 am in the morning",
+        "Intents": [
+            "atis_meal",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_time.period_of_day"
+        ],
+        "atis_meal": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_quantity": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time",
+            "depart_time.period_of_day"
+        ]
+    },
+    {
+        "Utterance": "what are the cities that american airlines serves , can you list costs of denver rental cars and then is there a meal on delta flight 852 from san francisco to dallas fort worth",
+        "Intents": [
+            "atis_city",
+            "atis_ground_fare",
+            "atis_meal"
+        ],
+        "Entities": [
+            "airline_name",
+            "city_name",
+            "transport_type",
+            "meal",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_city": [
+            "airline_name"
+        ],
+        "atis_ground_fare": [
+            "city_name",
+            "transport_type"
+        ],
+        "atis_meal": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "is there a meal on delta flight 852 from san francisco to dallas fort worth and what are the restrictions on the cheapest one way fare between boston and oakland",
+        "Intents": [
+            "atis_meal",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "cost_relative",
+            "round_trip"
+        ],
+        "atis_meal": [
+            "meal",
+            "airline_name",
+            "flight_number",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_restriction": [
+            "cost_relative",
+            "round_trip"
+        ]
+    },
+    {
+        "Utterance": "please list the prices for a rental car in pittsburgh and also what are all the available meals",
+        "Intents": [
+            "atis_ground_fare",
+            "atis_meal"
+        ],
+        "Entities": [
+            "transport_type",
+            "city_name",
+            "meal"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ],
+        "atis_meal": [
+            "meal"
+        ]
+    },
+    {
+        "Utterance": "where is general mitchell international located and then what are all the available meals",
+        "Intents": [
+            "atis_city",
+            "atis_meal"
+        ],
+        "Entities": [
+            "airport_name",
+            "meal"
+        ],
+        "atis_city": [
+            "airport_name"
+        ],
+        "atis_meal": [
+            "meal"
+        ]
+    },
+    {
+        "Utterance": "which airlines fly from toronto to san diego and have a stopover in denver , show me the cheapest fare in the database and also is there a meal on delta flight 852 from san francisco to dallas fort worth",
+        "Intents": [
+            "atis_airline",
+            "atis_cheapest",
+            "atis_meal"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "stoploc.city_name",
+            "cost_relative",
+            "meal",
+            "airline_name",
+            "flight_number"
+        ],
+        "atis_airline": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "stoploc.city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_meal": [
+            "airline_name",
+            "flight_number"
+        ]
+    },
+    {
+        "Utterance": "please inform me the type of aircraft used on a flight from atlanta to denver before 12 o'clock noon and also fares and flights from baltimore to philadelphia",
+        "Intents": [
+            "atis_aircraft",
+            "atis_airfare"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time"
+        ],
+        "atis_aircraft": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "depart_time.time_relative",
+            "depart_time.time"
+        ],
+        "atis_airfare": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "first class price san francisco pittsburgh round trip and then what is restriction ap57",
+        "Intents": [
+            "atis_airfare",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "class_type",
+            "fromloc.city_name",
+            "round_trip",
+            "restriction_code"
+        ],
+        "atis_airfare": [
+            "class_type",
+            "fromloc.city_name",
+            "round_trip"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "lowest fare from san francisco to orlando , what is the seating capacity of the various airplanes that united airlines uses and also could you give me the schedule of flights for american and delta to dfw on august fifteenth",
+        "Intents": [
+            "atis_airfare",
+            "atis_capacity",
+            "atis_flight_time"
+        ],
+        "Entities": [
+            "cost_relative",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "airline_name",
+            "flight_time",
+            "toloc.airport_code",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ],
+        "atis_airfare": [
+            "cost_relative",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_capacity": [
+            "airline_name"
+        ],
+        "atis_flight_time": [
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "flight_time",
+            "toloc.airport_code",
+            "depart_date.month_name",
+            "depart_date.day_number"
+        ]
+    },
+    {
+        "Utterance": "could you please give me the round trip fare from denver to atlanta , what is the cost of limousine service in philadelphia and also how many united flights are there to san francisco",
+        "Intents": [
+            "atis_airfare",
+            "atis_ground_fare",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "round_trip",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "transport_type",
+            "city_name",
+            "airline_name"
+        ],
+        "atis_airfare": [
+            "round_trip",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_ground_fare": [
+            "transport_type",
+            "city_name"
+        ],
+        "atis_quantity": [
+            "airline_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "cheapest fare from indianapolis to seattle and also list the number of flights arriving in dallas fort worth from boston before noon",
+        "Intents": [
+            "atis_airfare",
+            "atis_flight_no"
+        ],
+        "Entities": [
+            "cost_relative",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "arrive_time.time_relative",
+            "arrive_time.time"
+        ],
+        "atis_airfare": [
+            "cost_relative",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_flight_no": [
+            "arrive_time.time_relative",
+            "arrive_time.time"
+        ]
+    },
+    {
+        "Utterance": "what is the cost of a flight from boston to san francisco and also what is restriction ap80",
+        "Intents": [
+            "atis_airfare",
+            "atis_restriction"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "restriction_code"
+        ],
+        "atis_airfare": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_restriction": [
+            "restriction_code"
+        ]
+    },
+    {
+        "Utterance": "what does it cost to fly from boston to san francisco on united airlines flight 21",
+        "Intents": [
+            "atis_airfare"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "airline_name",
+            "flight_number"
+        ],
+        "atis_airfare": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "airline_name",
+            "flight_number"
+        ]
+    },
+    {
+        "Utterance": "show me all fares between philadelphia and san francisco that are less than 200 dollars one way , please tell me the times of the flights between boston and baltimore and also how many flights does eastern airlines have from boston to atlanta",
+        "Intents": [
+            "atis_airfare",
+            "atis_flight_time",
+            "atis_quantity"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "cost_relative",
+            "fare_amount",
+            "round_trip",
+            "flight_time",
+            "airline_name"
+        ],
+        "atis_airfare": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "cost_relative",
+            "fare_amount",
+            "round_trip"
+        ],
+        "atis_flight_time": [
+            "flight_time",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_quantity": [
+            "airline_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "please list the cost of all flights from philadelphia to denver airport next sunday and then please list all airline flights between denver and boston",
+        "Intents": [
+            "atis_airfare",
+            "atis_airline"
+        ],
+        "Entities": [
+            "fromloc.city_name",
+            "toloc.airport_name",
+            "depart_date.date_relative",
+            "depart_date.day_name",
+            "toloc.city_name"
+        ],
+        "atis_airfare": [
+            "fromloc.city_name",
+            "toloc.airport_name",
+            "depart_date.date_relative",
+            "depart_date.day_name"
+        ],
+        "atis_airline": [
+            "toloc.city_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "what is the cheapest one way ticket from denver to pittsburgh",
+        "Intents": [
+            "atis_airfare"
+        ],
+        "Entities": [
+            "cost_relative",
+            "round_trip",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_airfare": [
+            "cost_relative",
+            "round_trip",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ]
+    },
+    {
+        "Utterance": "i'd like the cheapest cost fare to fort worth from boston , please list information regarding san francisco airport and ground transportation in san jose",
+        "Intents": [
+            "atis_airfare",
+            "atis_airport",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "cost_relative",
+            "toloc.city_name",
+            "fromloc.city_name",
+            "airport_name",
+            "city_name"
+        ],
+        "atis_airfare": [
+            "cost_relative",
+            "toloc.city_name",
+            "fromloc.city_name"
+        ],
+        "atis_airport": [
+            "airport_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "show me ground transportation in westchester county",
+        "Intents": [
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "city_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "show me the ground transportation in denver",
+        "Intents": [
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "city_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "show me city served both by nationair and canadian airlines international and what types of ground transportation are there to san francisco airport",
+        "Intents": [
+            "atis_city",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "airline_name",
+            "toloc.airport_name"
+        ],
+        "atis_city": [
+            "airline_name"
+        ],
+        "atis_ground_service": [
+            "toloc.airport_name"
+        ]
+    },
+    {
+        "Utterance": "what airport is at tampa , show me all flights from pittsburgh to philadelphia which arrive before 8 o'clock am on wednesday and then ground transportation between airport and downtown in boston",
+        "Intents": [
+            "atis_airport",
+            "atis_flight",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "city_name",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "arrive_time.time_relative",
+            "arrive_time.time",
+            "arrive_date.day_name"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_flight": [
+            "fromloc.city_name",
+            "toloc.city_name",
+            "arrive_time.time_relative",
+            "arrive_time.time",
+            "arrive_date.day_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "i want to know what flights you have available coach or economy class from baltimore to dallas and show me ground transportation in san francisco",
+        "Intents": [
+            "atis_flight",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "class_type",
+            "or",
+            "economy",
+            "fromloc.city_name",
+            "toloc.city_name",
+            "city_name"
+        ],
+        "atis_flight": [
+            "class_type",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "what's the airport at orlando , please show me the return flight number from toronto to st. petersburg and also i need ground transportation in seattle",
+        "Intents": [
+            "atis_airport",
+            "atis_flight_no",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "city_name",
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_airport": [
+            "city_name"
+        ],
+        "atis_flight_no": [
+            "fromloc.city_name",
+            "toloc.city_name"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    },
+    {
+        "Utterance": "show me the cheapest fare in the database and ground transportation san francisco",
+        "Intents": [
+            "atis_cheapest",
+            "atis_ground_service"
+        ],
+        "Entities": [
+            "cost_relative",
+            "city_name"
+        ],
+        "atis_cheapest": [
+            "cost_relative"
+        ],
+        "atis_ground_service": [
+            "city_name"
+        ]
+    }
+]

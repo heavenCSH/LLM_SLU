@@ -1,0 +1,100 @@
+{"atis_airport": ["city_name"], "atis_flight": ["fromloc.city_name", "toloc.city_name", "arrive_time.time_relative", "arrive_time.time", "arrive_date.day_name"], "atis_ground_service": ["city_name"]}
+{"atis_flight": ["class_type", "fromloc.city_name", "toloc.city_name"], "atis_ground_service": ["city_name"]}
+{"atis_flight": ["fromloc.city_name", "toloc.city_name"], "atis_flight_time": ["airport_name"], "atis_restriction": ["fromloc.city_name", "toloc.city_name", "fare_amount"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_flight": ["fromloc.city_name", "toloc.city_name"], "atis_flight_no": ["fromloc.city_name", "toloc.city_name", "class_type", "depart_time.time_relative", "depart_time.time", "depart_date.day_name", "depart_time.period_of_day"]}
+{"atis_distance": ["fromloc.airport_name", "toloc.city_name"], "atis_flight": ["fromloc.city_name", "toloc.city_name", "stoploc.city_name", "airline_code"]}
+{"atis_flight": ["fromloc.city_name", "toloc.city_name", "depart_date.day_name"], "atis_ground_fare": ["transport_type", "city_name"]}
+{"atis_airport": ["city_name"], "atis_flight": ["airline_name", "flight_number", "fromloc.city_name", "toloc.city_name", "meal"], "atis_flight_no": ["fromloc.city_name", "toloc.city_name", "depart_date.day_name"]}
+{"atis_cheapest": ["cost_relative"], "atis_flight": ["flight_mod", "fromloc.city_name", "toloc.city_name"]}
+{"atis_city": ["airline_name"], "atis_ground_fare": ["city_name", "transport_type"], "atis_meal": ["meal", "airline_name", "flight_number", "fromloc.city_name", "toloc.city_name"]}
+{"atis_ground_fare": ["transport_type", "city_name"]}
+{"atis_airport": ["city_name", "fromloc.city_name", "fromloc.airport_name"], "atis_ground_fare": ["transport_type", "city_name"], "atis_quantity": ["airline_code", "class_type"]}
+{"atis_ground_fare": ["transport_type", "city_name"], "atis_restriction": ["restriction_code"]}
+{"atis_airport": ["city_name"], "atis_ground_fare": ["transport_type", "city_name"]}
+{"atis_aircraft": ["class_type", "airline_name", "fromloc.city_name", "toloc.city_name"], "atis_flight_no": ["class_type", "airline_name", "fromloc.city_name", "toloc.city_name", "cost_relative", "depart_time.time_relative", "depart_time.time", "depart_date.day_name", "depart_time.period_of_day"], "atis_flight_time": ["fromloc.city_name", "toloc.city_name", "depart_date.day_name"]}
+{"atis_flight_time": ["flight_time", "fromloc.city_name", "toloc.city_name", "depart_date.month_name", "depart_date.day_number"]}
+{"atis_flight": ["fromloc.city_name", "toloc.city_name"], "atis_flight_time": ["airport_name"], "atis_restriction": ["fromloc.city_name", "toloc.city_name", "fare_amount"]}
+{"atis_airport": ["city_name"], "atis_flight_time": ["flight_time", "fromloc.city_name", "toloc.city_name", "depart_date.month_name", "depart_date.day_number"], "atis_restriction": ["restriction_code"]}
+{"atis_flight_time": ["flight_time", "depart_time.period_of_day", "fromloc.city_name", "toloc.city_name"], "atis_ground_service": ["city_name"]}
+{"atis_flight": ["depart_date.day_name", "fromloc.city_name", "toloc.city_name"], "atis_flight_time": ["fromloc.city_name", "toloc.city_name", "flight_time", "depart_date.month_name", "depart_date.day_number"]}
+{"atis_airfare": ["cost_relative", "fromloc.city_name", "toloc.city_name"], "atis_capacity": ["airline_name"], "atis_flight_time": ["airline_name", "fromloc.city_name", "toloc.city_name", "flight_time", "toloc.airport_code", "depart_date.month_name", "depart_date.day_number"]}
+{"atis_flight_time": ["flight_time", "fromloc.city_name", "depart_time.time"]}
+{"atis_city": ["fromloc.city_name", "toloc.city_name"], "atis_flight_time": ["fromloc.city_name", "toloc.city_name", "depart_time.time_relative", "depart_time.time", "depart_time.period_of_day", "flight_time"], "atis_meal": ["meal", "airline_code", "flight_number", "toloc.airport_code", "airline_name"]}
+{"atis_flight_time": ["airline_name", "flight_time", "depart_time.period_of_day", "toloc.city_name"]}
+{"atis_airline": ["fromloc.city_name", "toloc.city_name"], "atis_flight_time": ["flight_time", "depart_time.time"]}
+{"atis_meal": ["meal", "airline_name", "flight_number", "fromloc.city_name", "toloc.city_name"], "atis_quantity": ["fromloc.city_name", "toloc.city_name", "depart_time.time_relative", "depart_time.time", "depart_time.period_of_day"]}
+{"atis_airport": ["city_name", "fromloc.city_name", "fromloc.airport_name"], "atis_ground_fare": ["transport_type", "city_name"], "atis_quantity": ["airline_code", "class_type"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_quantity": ["economy"]}
+{"atis_airfare": ["round_trip", "fromloc.city_name", "toloc.city_name"], "atis_ground_fare": ["transport_type", "city_name"], "atis_quantity": ["airline_name", "toloc.city_name"]}
+{"atis_airport": ["city_name", "fromloc.city_name"], "atis_quantity": ["fromloc.city_name", "toloc.city_name", "depart_time.time_relative", "depart_time.time", "depart_time.period_of_day"]}
+{"atis_quantity": ["fromloc.city_name", "toloc.city_name", "stoploc.city_name"]}
+{"atis_meal": ["meal", "fromloc.city_name", "toloc.city_name"], "atis_quantity": ["fromloc.city_name", "toloc.city_name", "depart_date.month_name", "depart_date.day_number"]}
+{"atis_airline": ["airline_code"], "atis_city": ["airline_name"], "atis_quantity": ["airline_name", "class_type"]}
+{"atis_cheapest": ["cost_relative"], "atis_city": ["airline_name"], "atis_quantity": ["airline_name", "fare_basis_code"]}
+{"atis_airport": ["city_name", "fromloc.airport_name"], "atis_distance": ["fromloc.airport_name", "toloc.city_name"]}
+{"atis_distance": ["fromloc.airport_name", "toloc.city_name"], "atis_flight": ["fromloc.city_name", "toloc.city_name", "stoploc.city_name", "airline_code"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_airport": ["city_name"], "atis_distance": ["fromloc.city_name"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_airport": ["airport_name"], "atis_distance": ["fromloc.airport_name", "toloc.city_name"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_distance": ["fromloc.airport_name", "toloc.city_name"], "atis_restriction": ["restriction_code"]}
+{"atis_abbreviation": ["airline_code"], "atis_airport": ["airline_name"], "atis_city": ["airline_name"]}
+{"atis_capacity": ["aircraft_code"], "atis_city": ["airline_name"]}
+{"atis_aircraft": ["airline_code"], "atis_city": ["city_name"]}
+{"atis_city": ["airline_name"], "atis_ground_service": ["toloc.airport_name"]}
+{"atis_city": ["airline_name"], "atis_ground_fare": ["city_name", "transport_type"], "atis_meal": ["meal", "airline_name", "flight_number", "fromloc.city_name", "toloc.city_name"]}
+{"atis_city": ["airline_name"]}
+{"atis_capacity": ["aircraft_code"], "atis_city": ["airline_name"]}
+{"atis_capacity": ["aircraft_code"], "atis_restriction": ["restriction_code"]}
+{"atis_aircraft": ["fromloc.city_name", "toloc.city_name", "depart_time.time"], "atis_capacity": ["aircraft_code"]}
+{"atis_capacity": ["fromloc.city_name", "toloc.city_name"]}
+{"atis_aircraft": ["airline_code"], "atis_city": ["city_name"]}
+{"atis_aircraft": ["class_type", "airline_name", "fromloc.city_name", "toloc.city_name"], "atis_flight_no": ["class_type", "airline_name", "fromloc.city_name", "toloc.city_name", "cost_relative", "depart_time.time_relative", "depart_time.time", "depart_date.day_name", "depart_time.period_of_day"], "atis_flight_time": ["fromloc.city_name", "toloc.city_name", "depart_date.day_name"]}
+{"atis_aircraft": ["fromloc.city_name", "toloc.city_name", "depart_time.time_relative", "depart_time.time"], "atis_airfare": ["fromloc.city_name", "toloc.city_name"]}
+{"atis_aircraft": ["fromloc.city_name", "toloc.city_name", "depart_time.time"], "atis_capacity": ["aircraft_code"]}
+{"atis_aircraft": ["fromloc.city_name", "toloc.city_name", "depart_time.time_relative", "depart_time.time"], "atis_city": ["airline_name"]}
+{"atis_aircraft": ["fromloc.city_name", "toloc.city_name"], "atis_distance": ["fromloc.city_name", "toloc.city_name"], "atis_ground_fare": ["transport_type", "airport_name"]}
+{"atis_aircraft": ["fromloc.city_name", "toloc.city_name"], "atis_airline": ["class_type"]}
+{"atis_aircraft": ["class_type", "airline_name", "fromloc.city_name", "toloc.city_name"], "atis_flight_no": ["class_type", "airline_name", "fromloc.city_name", "toloc.city_name", "cost_relative", "depart_time.time_relative", "depart_time.time", "depart_date.day_name", "depart_time.period_of_day"], "atis_flight_time": ["fromloc.city_name", "toloc.city_name", "depart_date.day_name"]}
+{"atis_cheapest": ["cost_relative"], "atis_flight_no": ["fromloc.city_name", "toloc.city_name"]}
+{"atis_airport": ["city_name"], "atis_flight_no": ["fromloc.city_name", "toloc.city_name"], "atis_ground_service": ["city_name"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_flight": ["fromloc.city_name", "toloc.city_name"], "atis_flight_no": ["fromloc.city_name", "toloc.city_name", "class_type", "depart_time.time_relative", "depart_time.time", "depart_date.day_name", "depart_time.period_of_day"]}
+{"atis_cheapest": ["cost_relative"], "atis_flight_no": ["fromloc.city_name", "toloc.city_name"]}
+{"atis_cheapest": ["cost_relative"], "atis_ground_service": ["city_name"]}
+{"atis_airport": ["airport_name"], "atis_cheapest": ["cost_relative"], "atis_flight_no": ["class_type", "airline_name"]}
+{"atis_cheapest": ["cost_relative"], "atis_flight": ["flight_mod", "fromloc.city_name", "toloc.city_name"]}
+{"atis_airline": ["fromloc.city_name", "toloc.city_name"]}
+{"atis_airline": ["depart_time.period_of_day", "fromloc.city_name", "toloc.city_name"], "atis_restriction": ["fare_amount"]}
+{"atis_airline": ["mod", "toloc.city_name"], "atis_cheapest": ["cost_relative"], "atis_flight": ["fromloc.city_name", "toloc.city_name", "depart_date.month_name", "depart_date.day_number", "depart_date.year"]}
+{"atis_airline": ["fromloc.city_name", "toloc.city_name", "stoploc.city_name"], "atis_cheapest": ["cost_relative"], "atis_meal": ["airline_name", "flight_number"]}
+{"atis_abbreviation": ["airline_code"], "atis_airport": ["airline_name"], "atis_city": ["airline_name"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_flight": ["fromloc.city_name", "toloc.city_name"], "atis_flight_no": ["fromloc.city_name", "toloc.city_name", "class_type", "depart_time.time_relative", "depart_time.time", "depart_date.day_name", "depart_time.period_of_day"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_quantity": ["economy"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_airport": ["city_name"], "atis_distance": ["fromloc.city_name"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_airport": ["airport_name"], "atis_distance": ["fromloc.airport_name", "toloc.city_name"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_distance": ["fromloc.airport_name", "toloc.city_name"], "atis_restriction": ["restriction_code"]}
+{"atis_abbreviation": ["fare_basis_code"], "atis_city": ["airline_name"], "atis_flight": ["fromloc.city_name", "toloc.city_name", "depart_time.period_of_day"]}
+{"atis_flight": ["fromloc.city_name", "toloc.city_name"], "atis_flight_time": ["airport_name"], "atis_restriction": ["fromloc.city_name", "toloc.city_name", "fare_amount"]}
+{"atis_meal": ["meal", "airline_name", "flight_number", "fromloc.city_name", "toloc.city_name"], "atis_restriction": ["cost_relative", "round_trip"]}
+{"atis_airport": ["city_name"], "atis_flight_time": ["flight_time", "fromloc.city_name", "toloc.city_name", "depart_date.month_name", "depart_date.day_number"], "atis_restriction": ["restriction_code"]}
+{"atis_airfare": ["class_type", "fromloc.city_name", "round_trip"], "atis_restriction": ["restriction_code"]}
+{"atis_abbreviation": ["airline_code"], "atis_airport": ["airline_name"], "atis_city": ["airline_name"]}
+{"atis_airport": ["city_name"], "atis_flight": ["fromloc.city_name", "toloc.city_name", "arrive_time.time_relative", "arrive_time.time", "arrive_date.day_name"], "atis_ground_service": ["city_name"]}
+{"atis_airport": ["city_name"], "atis_flight_no": ["fromloc.city_name", "toloc.city_name"], "atis_ground_service": ["city_name"]}
+{"atis_airport": ["city_name", "fromloc.airport_name"], "atis_distance": ["fromloc.airport_name", "toloc.city_name"]}
+{"atis_airport": ["airport_name"]}
+{"atis_airport": ["city_name"], "atis_flight_time": ["flight_time", "fromloc.city_name", "toloc.city_name", "depart_date.month_name", "depart_date.day_number"], "atis_restriction": ["restriction_code"]}
+{"atis_meal": ["meal", "airline_name", "flight_number", "fromloc.city_name", "toloc.city_name"], "atis_quantity": ["fromloc.city_name", "toloc.city_name", "depart_time.time_relative", "depart_time.time", "depart_time.period_of_day"]}
+{"atis_city": ["airline_name"], "atis_ground_fare": ["city_name", "transport_type"], "atis_meal": ["meal", "airline_name", "flight_number", "fromloc.city_name", "toloc.city_name"]}
+{"atis_meal": ["meal", "airline_name", "flight_number", "fromloc.city_name", "toloc.city_name"], "atis_restriction": ["cost_relative", "round_trip"]}
+{"atis_ground_fare": ["transport_type", "city_name"], "atis_meal": ["meal"]}
+{"atis_aircraft": ["fromloc.city_name", "toloc.city_name", "depart_time.time_relative", "depart_time.time"], "atis_airfare": ["fromloc.city_name", "toloc.city_name"]}
+{"atis_airfare": ["class_type", "fromloc.city_name", "round_trip"], "atis_restriction": ["restriction_code"]}
+{"atis_airfare": ["cost_relative", "fromloc.city_name", "toloc.city_name"], "atis_capacity": ["airline_name"], "atis_flight_time": ["airline_name", "fromloc.city_name", "toloc.city_name", "flight_time", "toloc.airport_code", "depart_date.month_name", "depart_date.day_number"]}
+{"atis_airfare": ["round_trip", "fromloc.city_name", "toloc.city_name"], "atis_ground_fare": ["transport_type", "city_name"], "atis_quantity": ["airline_name", "toloc.city_name"]}
+{"atis_airfare": ["cost_relative", "fromloc.city_name", "toloc.city_name"], "atis_flight_no": ["arrive_time.time_relative", "arrive_time.time"]}
+{"atis_airfare": ["fromloc.city_name", "toloc.city_name"], "atis_restriction": ["restriction_code"]}
+{"atis_airfare": ["fromloc.city_name", "toloc.city_name", "airline_name", "flight_number"]}
+{"atis_ground_service": ["city_name"]}
+{"atis_ground_service": ["city_name"]}
+{"atis_city": ["airline_name"], "atis_ground_service": ["toloc.airport_name"]}
+{"atis_airport": ["city_name"], "atis_flight": ["fromloc.city_name", "toloc.city_name", "arrive_time.time_relative", "arrive_time.time", "arrive_date.day_name"], "atis_ground_service": ["city_name"]}
+{"atis_flight": ["class_type", "fromloc.city_name", "toloc.city_name"], "atis_ground_service": ["city_name"]}
